@@ -19,3 +19,9 @@ Database:
     balance serial,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+"FantasticFour"
+[Bekzhan 21B030933]
+[Rauan 22B031182]
+[Yerdaulet 22B030389]
