@@ -1,7 +1,7 @@
 # Golang Bank Project
 ## Used Stack: Gorilla Mux, PostgresSQL, JWT
 
-Restaurant REST API
+Bank REST API
 
 - POST /login
 - POST /account
@@ -10,30 +10,12 @@ Restaurant REST API
 - DELETE /account/:id
 
 
-Table restaurants {
-    id bigserial [primary key]
-    created_at timestamp
-    updated_at timestamp
-    title text
-    coordinates text
-    address text
-    cousine text
-}
-
-Table menu {
-    id bigserial [primary key]
-    created_at timestamp
-    updated_at timestamp
-    title text
-    description text
-    nutrition_value text
-}
-
-// many-to-many
-Table restaurants_and_menu {
-    id bigserial [primary key]
-    created_at timestamp
-    updated_at timestamp
-    restaurant bigserial
-    menu bigserial
-}
+Database: 
+ accounts (
+    id SERIAL PRIMARY KEY,
+    first_name varchar(50),
+    last_name varchar(50),
+    number serial,
+    balance serial,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
